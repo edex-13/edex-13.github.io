@@ -21,46 +21,54 @@
          color: white;
          font-family: 'Source Sans Pro', sans-serif;
          text-align: center;
-         padding: 0vh 15vh;
+
+         height: 100vh;
       }
-      .conten__img {
+      .container {
          width: 100%;
+         height: 100%;
          display: flex;
-         justify-content: center;
-         align-items: center;
-         margin-bottom: 20px;
+         flex-direction: column;
+         position: absolute;
       }
+      .container-top {
+         width: 100%;
+         height: 100%;
+         display: flex;
+
+         align-items: center;
+         justify-content: center;
+         flex-direction: column;
+         position: absolute;
+         top: 0;
+      }
+    
       img {
          width: 300px;
          display: block;
       }
       h1 {
-         text-align: center;
-         font-size: 8rem;
+         font-size: 10rem;
          font-weight: 650;
-         top: 9rem;
          color: rgba(255, 255, 255, 0.5);
       }
       h3 {
          color: rgba(255, 255, 255);
          width: 60%;
-         margin: 2em auto;
+         font-size: 3rem;
          font-weight: 450;
-         animation: animatestext 2s linear infinite alternate;
       }
-      hr {
-         background-color: #e9970b;
-         border: solid #e9970b 2px;
-         border-radius: 10px;
-      }
+   
    </style>
    <body>
-      <h1>Developing</h1>
-      <div class="conten__img">
-         <img src="img/nose.svg" alt="" />
+      <div class="container">
+         <div class="container-top">
+            <h1>Developing</h1>
+            <div class="conten__img">
+               <img src="img/nose.svg" alt="" />
+            </div>
+            <h3>The page is under development</h3>
+         </div>
       </div>
-      <h3>The page is under development</h3>
-      <hr />
-      <h3><a href="https://github.com/edex-13">My GitHub</a></h3>
    </body>
 </html>
